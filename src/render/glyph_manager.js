@@ -124,10 +124,6 @@ class GlyphManager {
             return;
         }
 
-        if (!isChar['CJK Unified Ideographs'](id) && !isChar['Hangul Syllables'](id)) { // eslint-disable-line new-cap
-            return;
-        }
-
         let tinySDF = entry.tinySDF;
         if (!tinySDF) {
             let fontWeight = '400';
